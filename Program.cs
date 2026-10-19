@@ -29,28 +29,54 @@
 
 using System.Globalization;
 
-string subject = "Программирование";
+// string subject = "Программирование";
 
-foreach (char letter in subject)
+// foreach (char letter in subject)
+// {
+//     System.Console.WriteLine(letter);
+// }
+// System.Console.WriteLine(subject.Length);
+
+// int[] grades = { 4, 5, 3, 5, 4 };
+
+
+// foreach (int grade in grades)
+// {
+//     System.Console.WriteLine(grade);
+// }
+
+// System.Console.WriteLine();
+// int sum = 0;
+// for (int i = 0; i < grades.Length; i++)
+// {
+//     System.Console.WriteLine();
+//     sum = sum + grades[i];
+//     System.Console.WriteLine(sum);
+// } 
+// System.Console.WriteLine(sum);
+
+string[] students = { "Аня", "Ярослав", "Вика" };
+
+int count = 0;
+
+foreach (string student in students)
 {
-    System.Console.WriteLine(letter);
+    count++;
+    System.Console.WriteLine(student);
 }
-System.Console.WriteLine(subject.Length);
-
-int[] grades = { 4, 5, 3, 5, 4 };
-
-
-foreach (int grade in grades)
-{
-    System.Console.WriteLine(grade);
-}
-
+System.Console.WriteLine($"Количество студентов: {count}");
 System.Console.WriteLine();
-int sum = 0;
-for (int i = 0; i < grades.Length; i++)
+
+int[] points = { 10, 20, 15 };
+
+for (int i = 0; i < points.Length; i++)
 {
-    System.Console.WriteLine();
-    sum = sum + grades[i];
-    System.Console.WriteLine(sum);
-} 
-System.Console.WriteLine(sum);
+    points[i] += 5;
+}
+
+System.Console.WriteLine("Вывод:");
+
+foreach (int point in points)
+{
+    System.Console.WriteLine(point);
+}
