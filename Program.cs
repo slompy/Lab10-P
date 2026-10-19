@@ -39,23 +39,24 @@ using System.Text.RegularExpressions;
 // }
 // System.Console.WriteLine(subject.Length);
 
-// int[] grades = { 4, 5, 3, 5, 4 };
+int[] grades = { 4, 5, 3, 5, 4 };
 
 
-// foreach (int grade in grades)
-// {
-//     System.Console.WriteLine(grade);
-// }
+foreach (int grade in grades)
+{
+    System.Console.WriteLine(grade);
+}
 
-// System.Console.WriteLine();
-// int sum = 0;
-// for (int i = 0; i < grades.Length; i++)
-// {
-//     System.Console.WriteLine();
-//     sum = sum + grades[i];
-//     System.Console.WriteLine(sum);
-// } 
-// System.Console.WriteLine(sum);
+System.Console.WriteLine();
+int sum = 0;
+for (int i = 0; i < grades.Length; i++)
+{
+    System.Console.WriteLine();
+    sum = sum + grades[i];
+    System.Console.WriteLine(sum);
+} 
+System.Console.WriteLine($"Сумма всех оценок: {sum}");
+System.Console.WriteLine($"Средний балл: {sum / grades.Length}");
 
 // string[] students = { "Аня", "Ярослав", "Вика" };
 
@@ -93,42 +94,43 @@ using System.Text.RegularExpressions;
 //     number++;
 // }
 
-// Задача A
-int[] numbers = { 30, 20, 40, 42, 5 };
+// // Задача A
+// int[] numbers = { 30, 20, 40, 42, 5 };
 
 
-foreach (int number in numbers)
-{
-    System.Console.WriteLine(number);
-}
+// foreach (int number in numbers)
+// {
+//     System.Console.WriteLine(number);
+// }
 
-System.Console.WriteLine();
-int sum = 0;
-for (int i = 0; i < numbers.Length; i++)
-{
-    sum = sum + numbers[i];
-} 
-System.Console.WriteLine(sum);
-System.Console.WriteLine();
+// System.Console.WriteLine();
+// int sum = 0;
+// for (int i = 0; i < numbers.Length; i++)
+// {
+//     sum = sum + numbers[i];
+// } 
+// System.Console.WriteLine(sum);
+// System.Console.WriteLine();
 
-// Задача Г
+// // Задача Г
 
-int[] numbers1 = { 3, 4, 2, 2, 4 };
+// int[] numbers1 = { 3, 4, 2, 2, 4 };
 
-int max = 0;
+// int max = 0;
 
 
 
-foreach (int number1 in numbers1)
-{
-    System.Console.WriteLine(number1);
-    for (int a = 0; a < numbers1.Length; a++)
-{
-    int current = numbers1[a];
+// foreach (int number1 in numbers1)
+// {
+//     System.Console.WriteLine(number1);
+//     for (int a = 0; a < numbers1.Length; a++)
+// {
+//     int current = numbers1[a];
 
-    if (current > max)
-    {
-        max = current;
-    }
-}
-}
+//     if (current > max)
+//     {
+//         max = current;
+//     }
+// }
+// }
+
