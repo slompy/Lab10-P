@@ -39,24 +39,24 @@ using System.Text.RegularExpressions;
 // }
 // System.Console.WriteLine(subject.Length);
 
-int[] grades = { 4, 5, 3, 5, 4 };
+// int[] grades = { 4, 5, 3, 5, 4 };
 
 
-foreach (int grade in grades)
-{
-    System.Console.WriteLine(grade);
-}
+// foreach (int grade in grades)
+// {
+//     System.Console.WriteLine(grade);
+// }
 
-System.Console.WriteLine();
-int sum = 0;
-for (int i = 0; i < grades.Length; i++)
-{
-    System.Console.WriteLine();
-    sum = sum + grades[i];
-    System.Console.WriteLine(sum);
-} 
-System.Console.WriteLine($"Сумма всех оценок: {sum}");
-System.Console.WriteLine($"Средний балл: {sum / grades.Length}");
+// System.Console.WriteLine();
+// int sum = 0;
+// for (int i = 0; i < grades.Length; i++)
+// {
+//     System.Console.WriteLine();
+//     sum = sum + grades[i];
+//     System.Console.WriteLine(sum);
+// } 
+// System.Console.WriteLine($"Сумма всех оценок: {sum}");
+// System.Console.WriteLine($"Средний балл: {sum / grades.Length}");
 
 // string[] students = { "Аня", "Ярослав", "Вика" };
 
@@ -134,3 +134,38 @@ System.Console.WriteLine($"Средний балл: {sum / grades.Length}");
 // }
 // }
 
+// Вариант 1
+System.Console.WriteLine("Вариант 1:");
+System.Console.WriteLine();
+
+int[] temps = { 32, 25, 12, 12, 20, 17, 32 };
+
+int son = 0;
+
+// for (int i = 0; i < temps.Length; i++)
+// {
+//     son = son + temps[i];
+// }
+// System.Console.WriteLine($"Средняя температура: {son / temps.Length}");
+
+foreach(int temp in temps)
+{
+    son = son + temp;
+}
+System.Console.WriteLine($"Средняя температура: {son / temps.Length}");
+
+// Вариант 10
+System.Console.WriteLine("Вариант 10:");
+System.Console.WriteLine();
+
+string[] days = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+int count = 0;
+
+foreach (string day in days)
+{
+    if (day == "Суббота" || day == "Воскресенье")
+    {
+        count++;
+    }
+}
+System.Console.WriteLine($"Количество выходных: {count}");
